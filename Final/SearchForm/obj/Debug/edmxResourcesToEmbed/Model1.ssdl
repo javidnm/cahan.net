@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FinalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BloodGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="Value" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="EyeColor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="ColorName" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="MartialStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="MilitaryStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Nationality">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Citizenship" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="FatherName" Type="nvarchar" MaxLength="70" />
+    <Property Name="BirthPlace" Type="nvarchar" MaxLength="200" />
+    <Property Name="BirthOfDate" Type="date" />
+    <Property Name="GenderId" Type="int" />
+    <Property Name="NationalityId" Type="int" />
+    <Property Name="MartialStatusId" Type="int" />
+    <Property Name="Height" Type="tinyint" />
+    <Property Name="MilitaryStatusId" Type="int" />
+    <Property Name="EyeColorId" Type="int" />
+    <Property Name="BloodGroupId" Type="int" />
+    <Property Name="LivingPlace" Type="nvarchar" MaxLength="200" />
+    <Property Name="IssueDate" Type="date" Nullable="false" />
+    <Property Name="ExpiryDate" Type="date" />
+    <Property Name="Series" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IssuingAuthority" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="Password" Type="nvarchar" MaxLength="200" />
+    <Property Name="RoleId" Type="int" />
+  </EntityType>
+  <Association Name="FK__Person__BloodGro__7B5B524B">
+    <End Role="BloodGroup" Type="Self.BloodGroup" Multiplicity="0..1" />
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BloodGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="BloodGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Person__EyeColor__7A672E12">
+    <End Role="EyeColor" Type="Self.EyeColor" Multiplicity="0..1" />
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EyeColor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="EyeColorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Person__GenderId__76969D2E">
+    <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Person__MartialS__787EE5A0">
+    <End Role="MartialStatus" Type="Self.MartialStatus" Multiplicity="0..1" />
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MartialStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="MartialStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Person__Military__797309D9">
+    <End Role="MilitaryStatus" Type="Self.MilitaryStatus" Multiplicity="0..1" />
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MilitaryStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="MilitaryStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Person__National__778AC167">
+    <End Role="Nationality" Type="Self.Nationality" Multiplicity="0..1" />
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nationality">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="NationalityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__RoleId__6B24EA82">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FinalModelStoreContainer">
+    <EntitySet Name="BloodGroup" EntityType="Self.BloodGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EyeColor" EntityType="Self.EyeColor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gender" EntityType="Self.Gender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MartialStatus" EntityType="Self.MartialStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MilitaryStatus" EntityType="Self.MilitaryStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nationality" EntityType="Self.Nationality" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Person__BloodGro__7B5B524B" Association="Self.FK__Person__BloodGro__7B5B524B">
+      <End Role="BloodGroup" EntitySet="BloodGroup" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Person__EyeColor__7A672E12" Association="Self.FK__Person__EyeColor__7A672E12">
+      <End Role="EyeColor" EntitySet="EyeColor" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Person__GenderId__76969D2E" Association="Self.FK__Person__GenderId__76969D2E">
+      <End Role="Gender" EntitySet="Gender" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Person__MartialS__787EE5A0" Association="Self.FK__Person__MartialS__787EE5A0">
+      <End Role="MartialStatus" EntitySet="MartialStatus" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Person__Military__797309D9" Association="Self.FK__Person__Military__797309D9">
+      <End Role="MilitaryStatus" EntitySet="MilitaryStatus" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Person__National__778AC167" Association="Self.FK__Person__National__778AC167">
+      <End Role="Nationality" EntitySet="Nationality" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__RoleId__6B24EA82" Association="Self.FK__User__RoleId__6B24EA82">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3137c251d16f4d57b284378072c2da41" Name="Diagram1">
+        <EntityTypeShape EntityType="FinalModel.BloodGroup" Width="1.5" PointX="0.625" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinalModel.EyeColor" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinalModel.Gender" Width="1.5" PointX="1" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinalModel.MartialStatu" Width="1.5" PointX="5.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinalModel.MilitaryStatu" Width="1.5" PointX="5.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinalModel.Nationality" Width="1.5" PointX="5.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinalModel.Person" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinalModel.Role" Width="1.5" PointX="8" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FinalModel.User" Width="1.5" PointX="8" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="FinalModel.FK__Person__BloodGro__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="FinalModel.FK__Person__EyeColor__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="FinalModel.FK__Person__GenderId__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="FinalModel.FK__Person__MartialS__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="FinalModel.FK__Person__Military__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="FinalModel.FK__Person__National__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="FinalModel.FK__User__RoleId__6B24EA82" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

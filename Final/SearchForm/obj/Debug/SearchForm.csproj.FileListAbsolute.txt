@@ -1,0 +1,48 @@
+C:\Users\Javid\source\repos\Final\SearchForm\bin\Debug\SearchForm.exe.config
+C:\Users\Javid\source\repos\Final\SearchForm\bin\Debug\SearchForm.exe
+C:\Users\Javid\source\repos\Final\SearchForm\bin\Debug\SearchForm.pdb
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.Login.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.Properties.Resources.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.csproj.GenerateResource.cache
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.csproj.CoreCompileInputs.cache
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.exe
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.pdb
+C:\Users\Javid\source\repos\Final\SearchForm\bin\Debug\EntityFramework.dll
+C:\Users\Javid\source\repos\Final\SearchForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Javid\source\repos\Final\SearchForm\bin\Debug\EntityFramework.xml
+C:\Users\Javid\source\repos\Final\SearchForm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.MainForm.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.csproj.CopyComplete
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.csprojAssemblyReference.cache
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.NationalityForm.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.MartialStatusForm.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.BloodGroupForm.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.EyeColorForm.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.MilitarysStatusForm.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.PersonSearch.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.RoleForm.resources
+C:\Users\Javid\source\repos\Final\SearchForm\obj\Debug\SearchForm.UserForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\bin\Debug\SearchForm.exe.config
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\bin\Debug\SearchForm.exe
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\bin\Debug\SearchForm.pdb
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.BloodGroupForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.EyeColorForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.MainForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.Login.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.MartialStatusForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.MilitarysStatusForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.NationalityForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.Properties.Resources.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.PersonSearch.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.RoleForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.UserForm.resources
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.csproj.CopyComplete
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.exe
+C:\Users\HP\Desktop\C# Final project\Final\SearchForm\obj\Debug\SearchForm.pdb
